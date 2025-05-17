@@ -38,7 +38,7 @@ const HANDLERS: Record<
 export const onRequest: PagesFunction<{
   WEBDAV_USERNAME: string;
   WEBDAV_PASSWORD: string;
-  WEBDAV_PUBLIC_READ?: string;
+  WEBDAV_PUBLIC_READ: string;
 }> = async function (context) {
   const env = context.env;
   const request: Request = context.request;
